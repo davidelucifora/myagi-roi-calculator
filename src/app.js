@@ -46,8 +46,6 @@ function showResults(reach, extraRepsNeeded, extraRevenue){
     reachPercentageOutput.innerText = reach + '%';
     extraRevenueOutput.innerText = extraRevenue;
 
-
-
 }
 
 
