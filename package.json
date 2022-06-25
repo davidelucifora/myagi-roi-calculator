@@ -1,0 +1,25 @@
+{
+  "dependencies": {
+    "tailwindcss": "^3.1.2"
+  },
+  "name": "roi-calculator",
+  "description": "A Simple ROI Calculator",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build:css":"tailwindcss -i src/style.css -o dist/style.css",
+    "watch:css":"tailwindcss -i src/style.css -o dist/style.css --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dalux21/myagi-roi-calculator.git"
+  },
+  "author": "Davide Lucifora",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dalux21/myagi-roi-calculator/issues"
+  },
+  "homepage": "https://github.com/dalux21/myagi-roi-calculator#readme"
+}
