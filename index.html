@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>ROI Calculator</title>
+</head>
+<body>
+    <div >
+    <!--NavBar-->
+    <nav class="mx-auto p-6 ">
+        <div class="flex justify-between items-center">
+            <div class="pt-2">
+                <!--Logo-->
+                <img src="./../src/myagilogo.svg" alt="Myagi" height="128px" width="128px" class="md:w-48 lg:w-48 w-48">
+            </div>
+            <div>
+                <!--Book a Call-->
+                <button class="bg-myagiMain text-white p-3 px-8 rounded-full">Book a Call</button>
+            </div>
+        </div>
+    </nav>  
+
+<div class="flex max-h-\[70\vh\] items-center ml-12">
+    <div id="hero-header-container">
+<h1 class="text-6xl font-light">
+    Calculate Myagi's <span class=" text-myagiMain font-normal">ROI</span>
+</h1>
+<h5 class="text-2m mt-4">Find out how our platform can boost your sell-through</h5><br>
+<a href="#calc-form" class="bg-myagiMain text-white p-3 px-8 rounded-2xl mt-4 w-4/12">Start Now</a>
+</div>
+    <img src="/src/assets/hero-img-right.png"  class=" object-cover max-h-screen w-[60%] ml-24">
+</div>
+
+<div id="calc-form" class="flex h-screen ml-12 mt-8 items-center">
+<div id="left-col-form-section" class="w-1/2 mr-12">
+<h3 class="text-4xl mb-6 ml-6 text-myagiMain">Fill the Form to See Your Results</h3>
+    
+    <form class="w-full">
+        <div class="relative z-0  ml-6  mb-6 group">
+            <input type="text" name="number_stores" id="number_stores" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none  dark:border-gray-600 dark:focus:border-emerald-500 focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder="" required />
+            <label for="number_stores" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"># of Stores</label>
+        </div>
+        <div class="relative z-0  ml-6 mb-6 group ">
+            <input type="text" name="number_associates" id="number_associates" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-500 focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder="" required />
+            <label for="number_associates" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"># Associates per Store</label>
+        </div>
+        <div class="relative z-0  ml-6 mb-6 group ">
+            <input type="text" name="number_reps" id="number_reps" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-500 focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
+            <label for="number_reps" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"># Field Reps</label>
+        </div>
+        <div class="relative z-0  ml-6 mb-6 group ">
+            <input type="text" name="visits_per_year" id="visits_per_year" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-500 focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
+            <label for="visits_per_year" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"># Rep Visits per Year</label>
+        </div>
+        <div class="relative z-0  ml-6 mb-6 group ">
+            <input type="text" name="staff_per_visit" id="staff_per_visit" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-500 focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
+            <label for="staff_per_visit" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6"># Associates met per visit</label>
+        </div>
+        <div class="relative z-0  ml-6 mb-6 group ">
+            <input type="text" name="avg_product_price"  id="avg_product_price" class="block py-2.5 px-0 w-full text-sm text-gray-900 bg-transparent border-0 border-b-2 border-gray-300 appearance-none dark:border-gray-600 dark:focus:border-emerald-500 focus:outline-none focus:ring-0 focus:border-emerald-600 peer" placeholder=" " required />
+            <label for="avg_product_price" class="peer-focus:font-medium absolute text-sm text-gray-500 duration-300 transform -translate-y-6 scale-75 top-3 -z-10 origin-[0] peer-focus:left-0 peer-focus:text-emerald-600 peer-focus:dark:text-emerald-500 peer-placeholder-shown:scale-100 peer-placeholder-shown:translate-y-0 peer-focus:scale-75 peer-focus:-translate-y-6">Average Price of your Product</label>
+        </div>
+        <button id="calculate-roi" class="bg-myagiMain text-white p-3 px-8 rounded-md ml-6">Calculate</button>
+    </form>
+
+</div>
+
+<div id="right-col-form-section" class="w-1/2 mx-8 invisible transition-all duration-200 linear">
+    <h3 class="text-xl text-justify font-light">Your reps currently reach 
+         <span id="reach-percentage-output"class="text-myagiMain">X%</span> of the associates that sell your products.
+    </h3>
+    <h3 class="text-xl font-light my-4">You'd need to hire <span id="extra-reps-needed-output" class="font-normal text-myagiMain">X</span> more reps for full coverage.</h3>
+         <h3 class="text-xl text-justify font-light my-4">With Myagi, you can reach <span class="text-myagiMain font-normal">thousands</span> of associates, analyse their performance and gather feedback on your content in real time.</h3>
+         <h3 class="text-xl text-justify font-light my-4">Even if just half of the retail staff you reached sold just 1 extra product per month thanks to Myagi, you could expect an extra revenue of <span id="extra-revenue-output" class="text-myagiMain text-2xl font-normal">123,333,333</span> per year.</h3>
+       
+         
+        <button class="bg-myagiMain text-white p-3 px-8 rounded-md">Learn More</button>
+    </div>
+</div>
+</div>
+<script src="/src/app.js" type="text/javascript"></script>
+</body>
+<style>
+    html, 
+body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden; 
+}
+</style>
+</html>
