@@ -47,16 +47,3 @@ function showResults(reach, extraRepsNeeded, extraRevenue){
     extraRevenueOutput.innerText = Math.round(extraRevenue);
 
 }
-
-/*
-Soo
-Ok basically I take the numbers and do the calculations inside ROI Calculator.
-Easy Peasy Lemon Squeaaazy
-
-Input => Numbers from input fields
-Output=> Numbers to write in the final description.
-
-Now. How do we make the output nice and streamlined?
-
-Could be cool if it looked sth like RoiCalculator.FieldToFill
-*/
