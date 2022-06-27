@@ -42,12 +42,11 @@ function showResults(reach, extraRepsNeeded, extraRevenue){
     extraRepsNeededOutput = document.getElementById('extra-reps-needed-output');
     extraRevenueOutput = document.getElementById('extra-revenue-output');
 
-    extraRepsNeededOutput.innerText = extraRepsNeeded;
-    reachPercentageOutput.innerText = reach + '%';
-    extraRevenueOutput.innerText = extraRevenue;
+    extraRepsNeededOutput.innerText = Math.round(extraRepsNeeded);
+    reachPercentageOutput.innerText = Math.round(reach) + '%';
+    extraRevenueOutput.innerText = Math.round(extraRevenue);
 
 }
-
 
 /*
 Soo
