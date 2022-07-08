@@ -36,8 +36,8 @@ function showResults(reach, extraRepsNeeded, extraRevenue){
 
 
     resultsDiv = document.getElementById('right-col-form-section')
-    resultsDiv.classList.remove('invisible')
-    resultsDiv.classList.add('visible')
+    resultsDiv.classList.remove('opacity-0')
+    resultsDiv.classList.add('opacity-1')
     reachPercentageOutput = document.getElementById('reach-percentage-output');
     extraRepsNeededOutput = document.getElementById('extra-reps-needed-output');
     extraRevenueOutput = document.getElementById('extra-revenue-output');
